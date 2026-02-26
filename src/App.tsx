@@ -1,21 +1,16 @@
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Footer from './components/Footer';
 
 function App() {
   return (
-    <Router>
-      <div className="min-h-screen flex flex-col font-sans bg-white dark:bg-secondary-900 text-secondary-900 dark:text-secondary-50 transition-colors duration-300">
-        <Navbar />
-        <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<Home />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
-    </Router>
+    <div className="min-h-screen flex flex-col font-sans bg-white text-secondary-900 transition-colors duration-300">
+      <Navbar />
+      <main className="flex-grow">
+        <Home />
+      </main>
+      <Footer />
+    </div>
   );
 }
 

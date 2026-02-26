@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -33,9 +32,9 @@ const Navbar = () => {
             <div className="container mx-auto px-4 md:px-6">
                 <div className="flex items-center justify-between">
                     {/* Logo */}
-                    <Link to="/" className="flex items-center space-x-3 group">
+                    <a href="#" className="flex items-center space-x-3 group">
                         <div className="w-12 h-12 flex items-center justify-center overflow-hidden">
-                            <img src="/logo.png" alt="Studegram Logo" className="w-full h-full object-contain" onError={(e) => {
+                            <img src="logo.png" alt="Studegram Logo" className="w-full h-full object-contain" onError={(e) => {
                                 e.currentTarget.style.display = 'none';
                                 e.currentTarget.parentElement!.innerHTML = '<div class="w-12 h-12 bg-primary-500 rounded-xl flex items-center justify-center text-secondary-900 font-bold text-2xl">S</div>';
                             }} />
@@ -48,7 +47,7 @@ const Navbar = () => {
                                 The Trusted Gram for Students
                             </span>
                         </div>
-                    </Link>
+                    </a>
 
                     {/* Desktop Navigation */}
                     <div className="hidden md:flex items-center space-x-8">
