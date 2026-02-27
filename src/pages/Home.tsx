@@ -101,10 +101,8 @@ const Home = () => {
         <div className="overflow-x-hidden">
             {/* 1. HERO SECTION */}
             <section className="relative min-h-screen flex items-center pt-20 bg-white overflow-hidden">
-                {/* Abstract Background Shapes */}
-                <div className="absolute top-0 right-0 w-1/2 h-full bg-primary-100/30 -skew-x-12 transform origin-top-right transition-transform duration-1000"></div>
-                <div className="absolute -bottom-20 -left-20 w-80 h-80 bg-primary-500/5 rounded-full blur-3xl"></div>
-                <div className="absolute top-40 right-40 w-64 h-64 bg-primary-500/10 rounded-full blur-3xl"></div>
+                {/* Minimal Background Overlay */}
+                <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-primary-50/50 to-white pointer-events-none"></div>
 
                 <div className="container mx-auto px-4 md:px-6 relative z-10">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -115,15 +113,15 @@ const Home = () => {
                             className="space-y-8"
                         >
                             <div className="inline-flex items-center space-x-2 bg-primary-50 px-4 py-2 rounded-full border border-primary-100">
-                                <span className="flex h-2 w-2 rounded-full bg-primary-500 animate-pulse"></span>
-                                <span className="text-sm font-black tracking-widest uppercase text-secondary-900/60">
-                                    The Trusted Gram for Students
+                                <CheckCircle size={14} className="text-primary-600" />
+                                <span className="text-xs font-bold tracking-wider uppercase text-primary-700">
+                                    Trusted Education Partner
                                 </span>
                             </div>
 
-                            <h1 className="text-5xl md:text-7xl font-extrabold leading-[1.1] text-secondary-900 tracking-tighter">
+                            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-secondary-900 tracking-tight">
                                 Your Global <br />
-                                Education <span className="text-primary-500 underline decoration-primary-500/40 underline-offset-8">Begins Here</span>
+                                Education <span className="text-primary-600">Begins Here</span>
                             </h1>
 
                             <p className="text-lg md:text-xl text-secondary-900/60 leading-relaxed max-w-lg font-medium">
@@ -133,7 +131,7 @@ const Home = () => {
                             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
                                 <button
                                     onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                                    className="px-8 py-4 bg-primary-600 hover:bg-primary-700 text-secondary-900 rounded-2xl font-black text-lg shadow-xl shadow-primary-500/20 transition-all flex items-center justify-center group"
+                                    className="px-8 py-4 bg-primary-600 hover:bg-primary-700 text-secondary-900 rounded-2xl font-bold text-lg shadow-xl shadow-primary-500/20 transition-all flex items-center justify-center group"
                                 >
                                     Book Free Consultation
                                     <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
@@ -171,17 +169,9 @@ const Home = () => {
                             transition={{ duration: 1, delay: 0.2 }}
                             className="relative hidden lg:block"
                         >
-                            {/* Mascot Floating Image */}
-                            <div className="absolute -top-12 -right-12 z-0 w-48 h-48 opacity-20 lg:opacity-100 pointer-events-none group-hover:rotate-12 transition-transform duration-700">
-                                <img
-                                    src="/mascot.png"
-                                    alt="Studegram Mascot"
-                                    className="w-full h-full object-contain"
-                                    onError={(e) => e.currentTarget.style.display = 'none'}
-                                />
-                            </div>
 
-                            <div className="relative z-10 rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white dark:border-white/10 transform rotate-3 hover:rotate-0 transition-transform duration-700">
+
+                            <div className="relative z-10 rounded-2xl overflow-hidden shadow-xl border border-secondary-100">
                                 <img
                                     src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1000&auto=format&fit=crop"
                                     alt="Students Abroad"
@@ -189,14 +179,14 @@ const Home = () => {
                                 />
                             </div>
                             {/* Floating Badge */}
-                            <div className="absolute -bottom-10 -left-10 z-20 bg-white dark:bg-secondary-800 p-6 rounded-3xl shadow-2xl border border-gray-100 dark:border-white/5">
-                                <div className="flex items-center space-x-4">
-                                    <div className="w-12 h-12 bg-primary-50 dark:bg-primary-500/20 rounded-2xl flex items-center justify-center text-primary-600">
-                                        <CheckCircle size={24} />
+                            <div className="absolute -bottom-6 -left-6 z-20 bg-white p-5 rounded-2xl shadow-xl border border-secondary-100">
+                                <div className="flex items-center space-x-3">
+                                    <div className="w-10 h-10 bg-green-50 rounded-full flex items-center justify-center text-green-600">
+                                        <CheckCircle size={20} />
                                     </div>
                                     <div>
-                                        <p className="text-2xl font-black text-secondary-900 dark:text-white">100%</p>
-                                        <p className="text-xs font-bold text-gray-500 uppercase tracking-widest">Visa Success Rate</p>
+                                        <p className="text-xl font-bold text-secondary-900">100%</p>
+                                        <p className="text-xs font-medium text-secondary-500 uppercase tracking-wider">Visa Success Rate</p>
                                     </div>
                                 </div>
                             </div>
@@ -210,7 +200,7 @@ const Home = () => {
                 <div className="container mx-auto px-4 md:px-6">
                     <div className="max-w-3xl mx-auto text-center mb-20 space-y-4">
                         <h2 className="text-primary-600 font-bold uppercase tracking-[0.3em] text-sm">Our Mission</h2>
-                        <h3 className="text-4xl md:text-5xl font-black text-secondary-900">Studegram: The Trusted Gram for Students</h3>
+                        <h3 className="text-4xl md:text-5xl font-bold text-secondary-900">Studegram: The Trusted Gram for Students</h3>
                         <p className="text-lg text-secondary-900/60 leading-relaxed">We simplify international admissions with a focus on transparency, success, and student well-being. Your career is our global priority.</p>
                     </div>
                     <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
@@ -227,7 +217,7 @@ const Home = () => {
                                 viewport={{ once: true }}
                                 className="p-8 bg-primary-50 rounded-[2rem] text-center border border-primary-100"
                             >
-                                <h4 className="text-4xl font-black text-primary-600 mb-2">{stat.value}</h4>
+                                <h4 className="text-4xl font-bold text-primary-600 mb-2">{stat.value}</h4>
                                 <p className="text-sm font-bold text-secondary-900/60 uppercase tracking-widest">{stat.label}</p>
                             </motion.div>
                         ))}
@@ -241,7 +231,7 @@ const Home = () => {
                     <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
                         <div className="space-y-4">
                             <h2 className="text-primary-600 font-bold uppercase tracking-widest text-sm">Destinations</h2>
-                            <h3 className="text-4xl md:text-5xl font-black text-secondary-900">Where do you want to study?</h3>
+                            <h3 className="text-4xl md:text-5xl font-bold text-secondary-900">Where do you want to study?</h3>
                         </div>
                         <a href="#" className="flex items-center text-primary-600 font-bold hover:translate-x-2 transition-all">
                             View All Destinations <ArrowRight className="ml-2" size={20} />
@@ -253,13 +243,13 @@ const Home = () => {
                             <motion.div
                                 key={dest.name}
                                 whileHover={{ y: -10 }}
-                                className="group relative overflow-hidden rounded-[2.5rem] bg-white shadow-xl border border-primary-100"
+                                className="group relative overflow-hidden rounded-2xl bg-white shadow-xl border border-primary-100"
                             >
                                 <div className="p-10 bg-white rounded-t-[2.5rem] relative">
                                     <div className="text-5xl mb-6">{dest.flag}</div>
-                                    <h4 className="text-2xl font-black text-secondary-900 mb-4">{dest.name}</h4>
+                                    <h4 className="text-2xl font-bold text-secondary-900 mb-4">{dest.name}</h4>
                                     <p className="text-secondary-900/60 mb-8 leading-relaxed">{dest.desc}</p>
-                                    <button className="w-full py-4 border-2 border-primary-600/30 group-hover:border-primary-600 group-hover:bg-primary-600 group-hover:text-secondary-900 text-primary-600 font-black rounded-2xl transition-all">
+                                    <button className="w-full py-4 border-2 border-primary-600/30 group-hover:border-primary-600 group-hover:bg-primary-600 group-hover:text-secondary-900 text-primary-600 font-bold rounded-2xl transition-all">
                                         Explore Opportunities
                                     </button>
                                 </div>
@@ -274,17 +264,17 @@ const Home = () => {
                 <div className="container mx-auto px-4 md:px-6">
                     <div className="max-w-3xl mx-auto text-center mb-20 space-y-4">
                         <h2 className="text-primary-600 font-bold uppercase tracking-widest text-sm">Our Services</h2>
-                        <h3 className="text-4xl md:text-5xl font-black text-secondary-900">End-to-End Support</h3>
+                        <h3 className="text-4xl md:text-5xl font-bold text-secondary-900">End-to-End Support</h3>
                         <p className="text-lg text-secondary-900/60">From choosing the right course to settling in a new country, we are with you at every step of your journey.</p>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {services.map((service, idx) => (
-                            <div key={idx} className="p-10 bg-primary-50/30 rounded-[2.5rem] hover:bg-white transition-all duration-500 hover:shadow-2xl border border-primary-100/50 group">
+                            <div key={idx} className="p-10 bg-primary-50/30 rounded-2xl hover:bg-white transition-all duration-500 hover:shadow-2xl border border-primary-100/50 group">
                                 <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-8 shadow-sm group-hover:scale-110 transition-transform">
                                     <service.icon className="text-primary-600" size={32} />
                                 </div>
-                                <h4 className="text-2xl font-black text-secondary-900 mb-4">{service.title}</h4>
+                                <h4 className="text-2xl font-bold text-secondary-900 mb-4">{service.title}</h4>
                                 <p className="text-secondary-900/60 leading-relaxed">{service.desc}</p>
                             </div>
                         ))}
@@ -293,26 +283,26 @@ const Home = () => {
             </section>
 
             {/* 5. PROCESS SECTION */}
-            <section id="process" className="py-24 bg-primary-600 text-secondary-900 relative overflow-hidden">
+            <section id="process" className="py-24 bg-primary-600 text-white relative overflow-hidden">
                 <div className="container mx-auto px-4 md:px-6 relative z-10">
                     <div className="text-center mb-20">
-                        <h2 className="text-secondary-900/60 font-black uppercase tracking-widest text-sm mb-4">The Studegram Way</h2>
-                        <h3 className="text-4xl md:text-5xl font-black mb-6">Our Working Process</h3>
+                        <h2 className="text-white/80 font-bold uppercase tracking-widest text-sm mb-4">The Studegram Way</h2>
+                        <h3 className="text-4xl md:text-5xl font-bold mb-6 text-white">Our Working Process</h3>
                     </div>
 
                     <div className="relative">
                         {/* Dynamic Line */}
-                        <div className="hidden lg:block absolute top-[40px] left-0 w-full h-1 bg-secondary-900/10"></div>
+                        <div className="hidden lg:block absolute top-[40px] left-0 w-full h-1 bg-white/20"></div>
 
                         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-12">
                             {steps.map((step, idx) => (
                                 <div key={idx} className="relative z-10 text-center space-y-6">
-                                    <div className="w-20 h-20 bg-secondary-900 text-primary-500 rounded-full flex items-center justify-center text-3xl font-black mx-auto shadow-2xl border-4 border-primary-600">
+                                    <div className="w-20 h-20 bg-white text-primary-600 rounded-full flex items-center justify-center text-3xl font-bold mx-auto shadow-2xl border-4 border-primary-100">
                                         {step.number}
                                     </div>
                                     <div>
-                                        <h4 className="text-xl font-extrabold mb-3">{step.title}</h4>
-                                        <p className="text-secondary-900/70 text-sm leading-relaxed font-bold">{step.desc}</p>
+                                        <h4 className="text-xl font-semibold mb-3 text-white">{step.title}</h4>
+                                        <p className="text-white/80 text-sm leading-relaxed font-medium">{step.desc}</p>
                                     </div>
                                 </div>
                             ))}
@@ -326,12 +316,12 @@ const Home = () => {
                 <div className="container mx-auto px-4 md:px-6">
                     <div className="text-center mb-20">
                         <h2 className="text-primary-600 font-bold uppercase tracking-widest text-sm mb-4">Testimonials</h2>
-                        <h3 className="text-4xl md:text-5xl font-black text-secondary-900">What Our Students Say</h3>
+                        <h3 className="text-4xl md:text-5xl font-bold text-secondary-900">What Our Students Say</h3>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         {[1, 2, 3].map((i) => (
-                            <div key={i} className="p-10 bg-primary-50/50 rounded-[2.5rem] border border-primary-100/50">
+                            <div key={i} className="p-10 bg-primary-50/50 rounded-2xl border border-primary-100/50">
                                 <div className="flex text-primary-600 mb-6">
                                     {[1, 2, 3, 4, 5].map((s) => <Star key={s} size={18} fill="currentColor" />)}
                                 </div>
@@ -343,8 +333,8 @@ const Home = () => {
                                         <img src={`https://i.pravatar.cc/150?u=student-${i}`} alt="Student" />
                                     </div>
                                     <div>
-                                        <h4 className="font-extrabold text-secondary-900">Rahul Sharma</h4>
-                                        <p className="text-sm text-primary-600 font-black uppercase tracking-widest">MSc Data Science, UK</p>
+                                        <h4 className="font-semibold text-secondary-900">Rahul Sharma</h4>
+                                        <p className="text-sm text-primary-600 font-bold uppercase tracking-widest">MSc Data Science, UK</p>
                                     </div>
                                 </div>
                             </div>
@@ -356,41 +346,41 @@ const Home = () => {
             {/* 7. REGISTRATION / LEAD FORM */}
             <section id="contact" className="py-24 bg-primary-50/50 overflow-hidden relative">
                 <div className="container mx-auto px-4 md:px-6">
-                    <div className="bg-white rounded-[3rem] shadow-2xl overflow-hidden border border-primary-100">
+                    <div className="bg-white rounded-2xl shadow-2xl overflow-hidden border border-primary-100">
                         <div className="grid grid-cols-1 lg:grid-cols-5">
                             {/* Contact Info (Side) */}
-                            <div className="lg:col-span-2 p-12 lg:p-16 bg-primary-600 text-secondary-900 flex flex-col justify-between">
+                            <div className="lg:col-span-2 p-12 lg:p-16 bg-primary-600 text-white flex flex-col justify-between">
                                 <div>
-                                    <h3 className="text-4xl md:text-5xl font-black mb-8 leading-tight">Ready to Start Your Journey?</h3>
-                                    <p className="text-xl text-secondary-900/80 mb-12 font-medium">Fill out the form and our senior counselor will get in touch with you within 24 hours.</p>
+                                    <h3 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">Ready to Start Your Journey?</h3>
+                                    <p className="text-xl text-white/80 mb-12 font-medium">Fill out the form and our senior counselor will get in touch with you within 24 hours.</p>
 
                                     <div className="space-y-8">
                                         <div className="flex items-center space-x-6">
-                                            <div className="w-14 h-14 bg-secondary-900/10 rounded-2xl flex items-center justify-center text-secondary-900">
+                                            <div className="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center text-white">
                                                 <Phone size={28} />
                                             </div>
                                             <div>
-                                                <p className="text-secondary-900/60 font-bold uppercase tracking-widest text-xs mb-1">Call Us Anywhere</p>
-                                                <a href="tel:+919876543210" className="text-2xl font-black hover:text-black transition-colors">+91 98765 43210</a>
+                                                <p className="text-white/60 font-bold uppercase tracking-widest text-xs mb-1">Call Us Anywhere</p>
+                                                <a href="tel:+919876543210" className="text-2xl font-bold hover:text-primary-100 transition-colors">+91 98765 43210</a>
                                             </div>
                                         </div>
                                         <div className="flex items-center space-x-6">
-                                            <div className="w-14 h-14 bg-secondary-900/10 rounded-2xl flex items-center justify-center text-secondary-900">
+                                            <div className="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center text-white">
                                                 <Mail size={28} />
                                             </div>
                                             <div>
-                                                <p className="text-secondary-900/60 font-bold uppercase tracking-widest text-xs mb-1">Email Us</p>
-                                                <a href="mailto:hello@studegram.com" className="text-2xl font-black hover:text-black transition-colors">hello@studegram.com</a>
+                                                <p className="text-white/60 font-bold uppercase tracking-widest text-xs mb-1">Email Us</p>
+                                                <a href="mailto:hello@studegram.com" className="text-2xl font-bold hover:text-primary-100 transition-colors">hello@studegram.com</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div className="pt-12 border-t border-secondary-900/10 mt-12">
+                                <div className="pt-12 border-t border-white/20 mt-12">
                                     <p className="font-bold tracking-widest uppercase text-sm mb-4">Our Offices</p>
                                     <div className="flex flex-wrap gap-4">
                                         {['Delhi', 'Mumbai', 'London', 'Toronto'].map(city => (
-                                            <span key={city} className="px-4 py-2 bg-secondary-900/10 rounded-full text-sm font-bold">{city}</span>
+                                            <span key={city} className="px-4 py-2 bg-white/10 rounded-full text-sm font-bold">{city}</span>
                                         ))}
                                     </div>
                                 </div>
@@ -569,7 +559,7 @@ const Home = () => {
                                         <button
                                             type="submit"
                                             disabled={isSubmitting}
-                                            className={`w-full py-5 bg-secondary-900 dark:bg-primary-600 text-white rounded-2xl font-black text-xl hover:bg-primary-600 dark:hover:bg-primary-700 transition-all shadow-xl hover:shadow-primary-600/20 flex items-center justify-center space-x-3 ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
+                                            className={`w-full py-5 bg-secondary-900 dark:bg-primary-600 text-white rounded-2xl font-bold text-xl hover:bg-primary-600 dark:hover:bg-primary-700 transition-all shadow-xl hover:shadow-primary-600/20 flex items-center justify-center space-x-3 ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
                                         >
                                             {isSubmitting ? (
                                                 <>
@@ -598,7 +588,7 @@ const Home = () => {
                                             <CheckCircle size={60} />
                                         </div>
                                         <div className="space-y-4">
-                                            <h3 className="text-4xl font-black text-secondary-900 dark:text-white">Thank You!</h3>
+                                            <h3 className="text-4xl font-bold text-secondary-900 dark:text-white">Thank You!</h3>
                                             <p className="text-xl text-secondary-900/60 dark:text-white/60 max-w-md">
                                                 Your inquiry has been received. Our senior counselor will contact you shortly to plan your global future.
                                             </p>
@@ -637,7 +627,7 @@ const Home = () => {
                 <div className="container mx-auto px-4">
                     <div className="flex flex-wrap justify-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all">
                         {['Visa Approved', 'British Council Certified', 'ICEF Accredited', '1000+ Success Stories'].map(text => (
-                            <span key={text} className="text-sm font-black uppercase tracking-[0.2em] text-secondary-900">{text}</span>
+                            <span key={text} className="text-sm font-bold uppercase tracking-[0.2em] text-secondary-900">{text}</span>
                         ))}
                     </div>
                 </div>

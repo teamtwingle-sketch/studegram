@@ -10,7 +10,7 @@ const Footer = () => {
                     {/* Brand Info */}
                     <div className="space-y-6">
                         <div className="flex items-center space-x-3">
-                            <div className="w-12 h-12 bg-primary-600 rounded-xl flex items-center justify-center text-secondary-900 font-bold text-2xl shadow-xl shadow-primary-500/10">
+                            <div className="w-12 h-12 bg-primary-600 rounded-xl flex items-center justify-center text-white font-bold text-2xl shadow-xl shadow-primary-500/10">
                                 S
                             </div>
                             <div className="flex flex-col">
@@ -30,7 +30,7 @@ const Footer = () => {
                                 <a
                                     key={idx}
                                     href="#"
-                                    className="w-10 h-10 rounded-full bg-white border border-secondary-200 flex items-center justify-center text-secondary-900 hover:bg-primary-600 hover:text-secondary-900 hover:border-primary-600 transition-all duration-300"
+                                    className="w-10 h-10 rounded-full bg-white border border-secondary-200 flex items-center justify-center text-secondary-900 hover:bg-primary-600 hover:text-white hover:border-primary-600 transition-all duration-300"
                                 >
                                     <Icon size={20} />
                                 </a>
