@@ -167,7 +167,7 @@ const Home = () => {
                             initial={{ opacity: 0, scale: 0.9 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 1, delay: 0.2 }}
-                            className="relative hidden lg:block"
+                            className="relative mt-12 lg:mt-0"
                         >
                             {/* Mascot Floating Image */}
                             <div className="absolute -top-12 -right-12 z-0 w-48 h-48 opacity-20 lg:opacity-100 pointer-events-none group-hover:rotate-12 transition-transform duration-700">
