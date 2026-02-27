@@ -36,7 +36,7 @@ const Navbar = () => {
                         <div className="w-12 h-12 flex items-center justify-center overflow-hidden">
                             <img src="logo.png" alt="Studegram Logo" className="w-full h-full object-contain" onError={(e) => {
                                 e.currentTarget.style.display = 'none';
-                                e.currentTarget.parentElement!.innerHTML = '<div class="w-12 h-12 bg-primary-600 rounded-xl flex items-center justify-center text-white font-bold text-2xl">S</div>';
+                                e.currentTarget.parentElement!.innerHTML = '<div class="w-12 h-12 bg-primary-500 rounded-xl flex items-center justify-center text-secondary-900 font-bold text-2xl">S</div>';
                             }} />
                         </div>
                         <div className="flex flex-col">
@@ -62,7 +62,7 @@ const Navbar = () => {
                         ))}
                         <button
                             onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                            className="bg-primary-600 hover:bg-primary-700 text-white px-6 py-2.5 rounded-full text-sm font-bold transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+                            className="bg-primary-600 hover:bg-primary-700 text-secondary-900 px-6 py-2.5 rounded-full text-sm font-bold transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
                         >
                             Book Consultation
                         </button>
@@ -99,7 +99,7 @@ const Navbar = () => {
                                 setIsMobileMenuOpen(false);
                                 document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
                             }}
-                            className="bg-primary-600 text-white px-6 py-3 rounded-xl font-bold shadow-md"
+                            className="bg-primary-600 text-secondary-900 px-6 py-3 rounded-xl font-bold shadow-md"
                         >
                             Book Consultation
                         </button>

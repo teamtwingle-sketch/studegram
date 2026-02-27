@@ -283,26 +283,26 @@ const Home = () => {
             </section>
 
             {/* 5. PROCESS SECTION */}
-            <section id="process" className="py-24 bg-primary-600 text-white relative overflow-hidden">
+            <section id="process" className="py-24 bg-primary-600 text-secondary-900 relative overflow-hidden">
                 <div className="container mx-auto px-4 md:px-6 relative z-10">
                     <div className="text-center mb-20">
-                        <h2 className="text-white/80 font-bold uppercase tracking-widest text-sm mb-4">The Studegram Way</h2>
-                        <h3 className="text-4xl md:text-5xl font-bold mb-6 text-white">Our Working Process</h3>
+                        <h2 className="text-secondary-900/60 font-bold uppercase tracking-widest text-sm mb-4">The Studegram Way</h2>
+                        <h3 className="text-4xl md:text-5xl font-bold mb-6">Our Working Process</h3>
                     </div>
 
                     <div className="relative">
                         {/* Dynamic Line */}
-                        <div className="hidden lg:block absolute top-[40px] left-0 w-full h-1 bg-white/20"></div>
+                        <div className="hidden lg:block absolute top-[40px] left-0 w-full h-1 bg-secondary-900/10"></div>
 
                         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-12">
                             {steps.map((step, idx) => (
                                 <div key={idx} className="relative z-10 text-center space-y-6">
-                                    <div className="w-20 h-20 bg-white text-primary-600 rounded-full flex items-center justify-center text-3xl font-bold mx-auto shadow-2xl border-4 border-primary-100">
+                                    <div className="w-20 h-20 bg-secondary-900 text-primary-500 rounded-full flex items-center justify-center text-3xl font-bold mx-auto shadow-2xl border-4 border-primary-600">
                                         {step.number}
                                     </div>
                                     <div>
-                                        <h4 className="text-xl font-semibold mb-3 text-white">{step.title}</h4>
-                                        <p className="text-white/80 text-sm leading-relaxed font-medium">{step.desc}</p>
+                                        <h4 className="text-xl font-semibold mb-3">{step.title}</h4>
+                                        <p className="text-secondary-900/70 text-sm leading-relaxed font-semibold">{step.desc}</p>
                                     </div>
                                 </div>
                             ))}
@@ -349,38 +349,38 @@ const Home = () => {
                     <div className="bg-white rounded-2xl shadow-2xl overflow-hidden border border-primary-100">
                         <div className="grid grid-cols-1 lg:grid-cols-5">
                             {/* Contact Info (Side) */}
-                            <div className="lg:col-span-2 p-12 lg:p-16 bg-primary-600 text-white flex flex-col justify-between">
+                            <div className="lg:col-span-2 p-12 lg:p-16 bg-primary-600 text-secondary-900 flex flex-col justify-between">
                                 <div>
                                     <h3 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">Ready to Start Your Journey?</h3>
-                                    <p className="text-xl text-white/80 mb-12 font-medium">Fill out the form and our senior counselor will get in touch with you within 24 hours.</p>
+                                    <p className="text-xl text-secondary-900/80 mb-12 font-medium">Fill out the form and our senior counselor will get in touch with you within 24 hours.</p>
 
                                     <div className="space-y-8">
                                         <div className="flex items-center space-x-6">
-                                            <div className="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center text-white">
+                                            <div className="w-14 h-14 bg-secondary-900/10 rounded-2xl flex items-center justify-center text-secondary-900">
                                                 <Phone size={28} />
                                             </div>
                                             <div>
-                                                <p className="text-white/60 font-bold uppercase tracking-widest text-xs mb-1">Call Us Anywhere</p>
-                                                <a href="tel:+919847142205" className="text-2xl font-bold hover:text-primary-100 transition-colors">+91 98471 42205</a>
+                                                <p className="text-secondary-900/60 font-bold uppercase tracking-widest text-xs mb-1">Call Us Anywhere</p>
+                                                <a href="tel:+919847142205" className="text-2xl font-bold hover:text-black transition-colors">+91 98471 42205</a>
                                             </div>
                                         </div>
                                         <div className="flex items-center space-x-6">
-                                            <div className="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center text-white">
+                                            <div className="w-14 h-14 bg-secondary-900/10 rounded-2xl flex items-center justify-center text-secondary-900">
                                                 <Mail size={28} />
                                             </div>
                                             <div>
-                                                <p className="text-white/60 font-bold uppercase tracking-widest text-xs mb-1">Email Us</p>
-                                                <a href="mailto:mail@indiaforfuture.com" className="text-2xl font-bold hover:text-primary-100 transition-colors">mail@indiaforfuture.com</a>
+                                                <p className="text-secondary-900/60 font-bold uppercase tracking-widest text-xs mb-1">Email Us</p>
+                                                <a href="mailto:mail@indiaforfuture.com" className="text-2xl font-bold hover:text-black transition-colors">mail@indiaforfuture.com</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div className="pt-12 border-t border-white/20 mt-12">
+                                <div className="pt-12 border-t border-secondary-900/10 mt-12">
                                     <p className="font-bold tracking-widest uppercase text-sm mb-4">Our Offices</p>
                                     <div className="flex flex-wrap gap-4">
                                         {['Kochi', 'Kozhikode'].map(city => (
-                                            <span key={city} className="px-4 py-2 bg-white/10 rounded-full text-sm font-bold">{city}</span>
+                                            <span key={city} className="px-4 py-2 bg-secondary-900/10 rounded-full text-sm font-bold">{city}</span>
                                         ))}
                                     </div>
                                 </div>
