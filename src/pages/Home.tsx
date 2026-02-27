@@ -169,9 +169,17 @@ const Home = () => {
                             transition={{ duration: 1, delay: 0.2 }}
                             className="relative hidden lg:block"
                         >
+                            {/* Mascot Floating Image */}
+                            <div className="absolute -top-12 -right-12 z-0 w-48 h-48 opacity-20 lg:opacity-100 pointer-events-none group-hover:rotate-12 transition-transform duration-700">
+                                <img
+                                    src="/mascot.png"
+                                    alt="Studegram Mascot"
+                                    className="w-full h-full object-contain"
+                                    onError={(e) => e.currentTarget.style.display = 'none'}
+                                />
+                            </div>
 
-
-                            <div className="relative z-10 rounded-2xl overflow-hidden shadow-xl border border-secondary-100">
+                            <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border-8 border-white dark:border-white/10 transform rotate-3 hover:rotate-0 transition-transform duration-700">
                                 <img
                                     src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1000&auto=format&fit=crop"
                                     alt="Students Abroad"
