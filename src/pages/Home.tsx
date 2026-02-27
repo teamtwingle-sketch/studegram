@@ -82,7 +82,7 @@ const Home = () => {
 *Message:* ${formData.message}`;
 
         const encodedMessage = encodeURIComponent(message);
-        const whatsappUrl = `https://wa.me/919876543210?text=${encodedMessage}`;
+        const whatsappUrl = `https://wa.me/919847142205?text=${encodedMessage}`;
 
         // Simulate Backend Submission
         setTimeout(() => {
@@ -361,7 +361,7 @@ const Home = () => {
                                             </div>
                                             <div>
                                                 <p className="text-white/60 font-bold uppercase tracking-widest text-xs mb-1">Call Us Anywhere</p>
-                                                <a href="tel:+919876543210" className="text-2xl font-bold hover:text-primary-100 transition-colors">+91 98765 43210</a>
+                                                <a href="tel:+919847142205" className="text-2xl font-bold hover:text-primary-100 transition-colors">+91 98471 42205</a>
                                             </div>
                                         </div>
                                         <div className="flex items-center space-x-6">
@@ -370,7 +370,7 @@ const Home = () => {
                                             </div>
                                             <div>
                                                 <p className="text-white/60 font-bold uppercase tracking-widest text-xs mb-1">Email Us</p>
-                                                <a href="mailto:hello@studegram.com" className="text-2xl font-bold hover:text-primary-100 transition-colors">hello@studegram.com</a>
+                                                <a href="mailto:mail@indiaforfuture.com" className="text-2xl font-bold hover:text-primary-100 transition-colors">mail@indiaforfuture.com</a>
                                             </div>
                                         </div>
                                     </div>
@@ -379,7 +379,7 @@ const Home = () => {
                                 <div className="pt-12 border-t border-white/20 mt-12">
                                     <p className="font-bold tracking-widest uppercase text-sm mb-4">Our Offices</p>
                                     <div className="flex flex-wrap gap-4">
-                                        {['Delhi', 'Mumbai', 'London', 'Toronto'].map(city => (
+                                        {['Kochi', 'Kozhikode'].map(city => (
                                             <span key={city} className="px-4 py-2 bg-white/10 rounded-full text-sm font-bold">{city}</span>
                                         ))}
                                     </div>
@@ -609,7 +609,7 @@ const Home = () => {
 
             {/* WhatsApp Floating Button */}
             <a
-                href="https://wa.me/919876543210"
+                href="https://wa.me/919847142205"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="fixed bottom-8 right-8 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 transition-all z-50 flex items-center justify-center hover:scale-110 group"

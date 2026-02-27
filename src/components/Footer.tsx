@@ -77,23 +77,23 @@ const Footer = () => {
                                     <MapPin size={22} />
                                 </div>
                                 <p className="text-secondary-900/70 font-medium transition-colors leading-relaxed text-sm">
-                                    123 Edude Drive, Suite 456<br />Global Business Hub<br />New Delhi, India
+                                    No. 26/398, Sheikh Square<br />Mavoor Road, Kozhikode<br />Kerala 673004, India
                                 </p>
                             </li>
                             <li className="flex items-center space-x-4">
                                 <div className="w-10 h-10 rounded-lg bg-white border border-secondary-200 flex items-center justify-center text-primary-600 flex-shrink-0">
                                     <Phone size={22} />
                                 </div>
-                                <a href="tel:+919876543210" className="text-secondary-900/70 font-bold hover:text-primary-600 transition-colors text-sm">
-                                    +91 98765 43210
+                                <a href="tel:+919847142205" className="text-secondary-900/70 font-bold hover:text-primary-600 transition-colors text-sm">
+                                    +91 98471 42205
                                 </a>
                             </li>
                             <li className="flex items-center space-x-4">
                                 <div className="w-10 h-10 rounded-lg bg-white border border-secondary-200 flex items-center justify-center text-primary-600 flex-shrink-0">
                                     <Mail size={22} />
                                 </div>
-                                <a href="mailto:hello@studegram.com" className="text-secondary-900/70 font-bold hover:text-primary-600 transition-colors lowercase text-sm">
-                                    hello@studegram.com
+                                <a href="mailto:mail@indiaforfuture.com" className="text-secondary-900/70 font-bold hover:text-primary-600 transition-colors lowercase text-sm">
+                                    mail@indiaforfuture.com
                                 </a>
                             </li>
                         </ul>
