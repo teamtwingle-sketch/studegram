@@ -31,14 +31,8 @@ const Navbar = () => {
         >
             <div className="container mx-auto px-4 md:px-6">
                 <div className="flex items-center justify-between">
-                    {/* Logo */}
-                    <a href="#" className="flex items-center space-x-3 group">
-                        <div className="w-12 h-12 flex items-center justify-center overflow-hidden">
-                            <img src="logo.png" alt="Studegram Logo" className="w-full h-full object-contain" onError={(e) => {
-                                e.currentTarget.style.display = 'none';
-                                e.currentTarget.parentElement!.innerHTML = '<div class="w-12 h-12 bg-primary-500 rounded-xl flex items-center justify-center text-secondary-900 font-bold text-2xl">S</div>';
-                            }} />
-                        </div>
+                    {/* Logo Text Only */}
+                    <a href="#" className="flex items-center group">
                         <div className="flex flex-col">
                             <span className="text-2xl font-black tracking-tighter text-secondary-900 leading-none">
                                 STUDE<span className="text-primary-500">GRAM</span>
